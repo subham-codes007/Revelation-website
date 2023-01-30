@@ -8,7 +8,11 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-
+* {
+  /* border-top: 5px solid #1098ad; */
+  margin: 0;
+  padding: 0;
+}
 body {
   background: #fff;
   color: #2f3138;
@@ -68,7 +72,11 @@ h6 {
 }
 
 /* Back to top button */
-
+.heading-logo {
+  font-family: sans-serif;
+  font-weight: bold;
+  color: rgb(59, 203, 203);
+}
 .back-to-top {
   position: fixed;
   display: none;
@@ -109,7 +117,7 @@ h6 {
 }
 
 .section-header::before {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   width: 60px;
@@ -207,16 +215,16 @@ h6 {
   display: none;
   top: 100%;
   left: 0;
-  z-index: 99;
+  z-index: 100;
 }
 
 .nav-menu li {
   position: relative;
-  white-space: nowrap;
 }
 
 .nav-menu > li {
   float: left;
+  margin-right: 50px;
 }
 
 .nav-menu li:hover > ul,
@@ -226,7 +234,7 @@ h6 {
 
 .nav-menu ul ul {
   top: 0;
-  left: 100%;
+  left: 50%;
 }
 
 .nav-menu ul li {
@@ -256,7 +264,6 @@ h6 {
 
 #nav-menu-container {
   float: right;
-  margin: 0;
 }
 
 /* Nav Meu Styling */
@@ -537,7 +544,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #intro .play-btn::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   top: 50%;
@@ -553,7 +560,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #intro .play-btn:before {
-  content: '';
+  content: "";
   position: absolute;
   width: 120px;
   height: 120px;
@@ -582,7 +589,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #intro .play-btn:hover::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   top: 50%;
@@ -834,7 +841,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #schedule .tab-pane {
-  transition: ease-in-out .2s;
+  transition: ease-in-out 0.2s;
 }
 
 #schedule .schedule-item {
@@ -1218,7 +1225,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #buy-tickets .card {
   border: none;
   border-radius: 5px;
-  transition: all  0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   box-shadow: 0 10px 25px 0 rgba(6, 12, 34, 0.1);
 }
 
@@ -1401,6 +1408,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #footer .footer-top {
   background: #040919;
   padding: 60px 0 30px 0;
+  /* margin:50px 0; */
 }
 
 #footer .footer-top .footer-info {
@@ -1430,6 +1438,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 
+#footer .footer-top .social-links {
+  position: relative;
+  display: inline-block;
+}
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
@@ -1495,10 +1507,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #footer .footer-top .footer-contact {
   margin-bottom: 30px;
+  display: inline-block;
+  padding-left: 520px;
 }
 
 #footer .footer-top .footer-contact p {
-  line-height: 26px;
+  line-height: 16px;
+  display: inline-block;
+  line-break: auto;
 }
 
 #footer .footer-top .footer-newsletter {
@@ -1622,7 +1638,6 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding: 8px 60px;
   }
 }
-
 @media (max-width: 768px) {
   .back-to-top {
     bottom: 15px;
