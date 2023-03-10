@@ -209,10 +209,15 @@ img {
   vertical-align: middle;
   border-style: none;
   height: 250px;
-  margin-bottom: -95px;
+  margin-bottom: -16px;
   display: inline-block;
-  margin-right: 92px;
+  margin-left: 83px;
   /* margin-right: 0px; */
+}
+
+.myway {
+  max-width: 66%;
+  height: auto;
 }
 
 @media (max-width: 460px) {
@@ -223,6 +228,7 @@ img {
 @media (max-width: 1000px) {
   img {
     margin-right: -27px;
+    margin-bottom: 29px;
   }
 }
 
@@ -675,6 +681,29 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-radius: 0;
 }
 
+.pope {
+  color: #007bff;
+  position: relative;
+  text-decoration: none;
+  background-color: transparent;
+  display: inline-block;
+  left: 197px;
+  -webkit-text-decoration-skip: objects;
+}
+
+@media (max-width: 1000px) {
+  .pope {
+    color: #007bff;
+    position: relative;
+    text-decoration: none;
+    background-color: transparent;
+    display: inline-block;
+    left: 100px;
+    -webkit-text-decoration-skip: objects;
+    align-items: center;
+  }
+}
+
 #intro .about-btn {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
@@ -730,7 +759,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #about {
-  background: url("../img/about-bg.jpg");
+  background: url("../img/bg-black.jpg");
   background-size: cover;
   overflow: hidden;
   position: relative;
@@ -769,6 +798,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 
+
 /*--------------------------------------------------------------
 # Speakers Section
 --------------------------------------------------------------*/
@@ -791,7 +821,41 @@ body.mobile-nav-active #mobile-nav-toggle {
   right: 0;
   text-align: center;
   padding-top: 10px;
-  transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 300ms cubic-bezier(0.65, 0.05, 0.36, 1);
+  display: inline-block;
+  width: 271px;
+  margin-left: 83px;
+}
+
+@media (max-width: 1000px) {
+  #speakers .speaker .details {
+    background: rgba(6, 12, 34, 0.76);
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    right: 0;
+    text-align: center;
+    padding-top: 10px;
+    transition: all 300ms cubic-bezier(0.65, 0.05, 0.36, 1);
+    display: inline-block;
+    width: 434px;
+    margin-left: 83px;
+    margin-bottom: 59px;
+  }
+}
+
+.FIX {
+  position: relative;
+  margin-left: -2px;
+  left: 180px;
+}
+
+@media (max-width: 1000px) {
+  .FIX {
+    position: relative;
+    margin-left: -2px;
+    left: 3px;
+  }
 }
 
 #speakers .speaker .details h3 {
@@ -1127,14 +1191,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   overflow: visible;
 }
 
-#gallery .gallery-carousel .center {
+/* #gallery .gallery-carousel .center {
   border: 6px solid #f82249;
   margin: -10px;
   box-sizing: content-box;
   padding: 4px;
   background: #fff;
   z-index: 1;
-}
+} */
 
 /*--------------------------------------------------------------
 # supporters Section
