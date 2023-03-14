@@ -30,7 +30,7 @@ a:focus {
 .Revelation {
   font-size: 30px;
   font-weight: 600;
-  color: #e00c0c;
+  color: #fdfdfe;
   text-shadow: 0px 0px 5px #b393d3, 0px 0px 10px #b393d3, 0px 0px 10px #b393d3,
     0px 0px 20px #b393d3;
   letter-spacing: 4px;
@@ -156,7 +156,7 @@ h6 {
 --------------------------------------------------------------*/
 
 #header {
-  height: 90px;
+  /* height: 90px; */
   padding: 25px 0;
   position: fixed;
   left: 0;
@@ -174,7 +174,7 @@ h6 {
 #header.header-scrolled,
 #header.header-fixed {
   background: rgba(6, 12, 34, 0.98);
-  height: 70px;
+  /* height: 70px; */
   padding: 15px 0;
   transition: all 0.5s;
 }
@@ -201,7 +201,6 @@ h6 {
 
 #header #logo img {
   padding: 0;
-  margin-top: -99px;
   max-height: 271px;
 }
 
@@ -211,8 +210,12 @@ img {
   height: 250px;
   margin-bottom: -16px;
   display: inline-block;
-  margin-left: 83px;
+  margin-left: 16px;
   /* margin-right: 0px; */
+}
+
+.revelation-logo {
+  display: none;
 }
 
 .myway {
@@ -222,16 +225,20 @@ img {
 
 @media (max-width: 460px) {
   img {
-    margin-right: -16px;
+    margin-right: 10px;
   }
-}
-@media (max-width: 1000px) {
-  img {
-    margin-right: -27px;
-    margin-bottom: 29px;
+
+  .revelation-logo {
+    display: inline-block;
+    height: 50px;
   }
 }
 
+.Logo_height{
+  height: 50px;
+}
+
+/*  */
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -243,6 +250,13 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
+  
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-menu ul {
@@ -450,6 +464,10 @@ img {
   padding: 0;
   margin: 0;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
 }
 
 #mobile-nav ul li {
@@ -463,8 +481,6 @@ img {
   padding: 10px 22px 10px 15px;
   position: relative;
   text-decoration: none;
-  width: 100%;
-  display: block;
   outline: none;
 }
 
@@ -548,6 +564,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 8px;
   top: 0;
 }
+
+/* .logo1 .Jiu {
+  height: 60px;
+  width: auto;
+  display: inline-block;
+} */
+
 #intro {
   width: 100%;
   height: 100vh;
@@ -759,7 +782,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #about {
-  background: url("../img/bg-black.jpg");
+  background: url("../img/about-bg.jpg");
   background-size: cover;
   overflow: hidden;
   position: relative;
@@ -796,8 +819,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 14px;
   margin-bottom: 20px;
   color: #fff;
+  text-align: justify;
 }
-
 
 /*--------------------------------------------------------------
 # Speakers Section
@@ -839,7 +862,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     transition: all 300ms cubic-bezier(0.65, 0.05, 0.36, 1);
     display: inline-block;
     width: 434px;
-    margin-left: 83px;
+    margin-left: -36px;
     margin-bottom: 59px;
   }
 }
@@ -929,7 +952,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 15px;
   margin-bottom: 10px;
 }
-
+ .img_height
+{
+  max-width: 100%;
+  height: 260px;
+}
 /*--------------------------------------------------------------
 # Schedule Section
 --------------------------------------------------------------*/
@@ -1569,6 +1596,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 0;
   font-family: "Raleway", sans-serif;
   color: #fff;
+  text-align: justify;
 }
 
 #footer .footer-top .social-links a {
