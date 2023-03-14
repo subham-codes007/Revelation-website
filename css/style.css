@@ -27,6 +27,7 @@ a:focus {
   outline: none;
   text-decoration: none;
 }
+
 .Revelation {
   font-size: 30px;
   font-weight: 600;
@@ -36,6 +37,7 @@ a:focus {
   letter-spacing: 4px;
   display: inline-block;
 }
+
 p {
   padding: 0;
   margin: 0 0 30px 0;
@@ -78,6 +80,7 @@ h6 {
 #events {
   margin-top: 20px;
 }
+
 /* Back to top button */
 
 .back-to-top {
@@ -228,13 +231,20 @@ img {
     margin-right: 10px;
   }
 
+  .logo-position {
+    margin-left: 60px;
+    margin-bottom: 20px;
+    display: inline-block;
+    height: 250px;
+  }
+
   .revelation-logo {
     display: inline-block;
     height: 50px;
   }
 }
 
-.Logo_height{
+.Logo_height {
   height: 50px;
 }
 
@@ -250,7 +260,7 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
-  
+
 }
 
 .nav-menu {
@@ -272,12 +282,12 @@ img {
   white-space: nowrap;
 }
 
-.nav-menu > li {
+.nav-menu>li {
   float: left;
 }
 
-.nav-menu li:hover > ul,
-.nav-menu li.sfHover > ul {
+.nav-menu li:hover>ul,
+.nav-menu li.sfHover>ul {
   display: block;
 }
 
@@ -334,11 +344,11 @@ img {
   color: #fff;
 }
 
-.nav-menu > li {
+.nav-menu>li {
   margin-left: 8px;
 }
 
-.nav-menu > li > a:before {
+.nav-menu>li>a:before {
   content: "";
   position: absolute;
   width: 0;
@@ -351,8 +361,8 @@ img {
 }
 
 .nav-menu a:hover:before,
-.nav-menu li:hover > a:before,
-.nav-menu .menu-active > a:before {
+.nav-menu li:hover>a:before,
+.nav-menu .menu-active>a:before {
   visibility: visible;
   width: 100%;
 }
@@ -384,6 +394,7 @@ img {
   line-height: 1;
   font-size: 13px;
 }
+
 .nav-menu li.buy-tickets a:hover {
   background: none;
 }
@@ -415,7 +426,7 @@ img {
   border-radius: 3px;
 }
 
-.nav-menu ul li:hover > a {
+.nav-menu ul li:hover>a {
   background: #f82249;
   color: #fff;
 }
@@ -952,11 +963,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 15px;
   margin-bottom: 10px;
 }
- .img_height
-{
+
+.img_height {
   max-width: 100%;
   height: 260px;
 }
+
 /*--------------------------------------------------------------
 # Schedule Section
 --------------------------------------------------------------*/
@@ -1054,6 +1066,69 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #152b79;
   margin-bottom: 0;
 }
+
+.container-table {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+
+  margin-bottom: 30px;
+  color: red;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  margin-top: 30px;
+  background-color: black;
+  color: white;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  color: black;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: normal;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: red;
+  font-weight: normal;
+}
+
+td {
+  border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) td {
+  background-color: #ffffff;
+}
+
+tr:nth-child(odd) td {
+  background-color: #f5f2f2;
+}
+
+
+
 
 /*--------------------------------------------------------------
 # Venue Section
@@ -1258,9 +1333,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: rgba(255, 255, 255, 0.5);
   height: 160px;
 }
+
 #check {
   margin-left: 381px;
 }
+
 #supporters .supporter-logo:hover img {
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
@@ -1717,6 +1794,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 @media (min-width: 768px) {
+
   #contact .contact-address,
   #contact .contact-phone,
   #contact .contact-email {
@@ -1829,6 +1907,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin-top: 10px;
   }
 }
+
 @media (max-width: 1000px) {
   #check {
     margin-left: 0px;
