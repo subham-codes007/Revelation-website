@@ -1119,7 +1119,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 0;
 }
 
-.container-table {
+.schedule-font{
+  font-size: Arial, sans-serif;
+}
+
+.schedule-font {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
@@ -1379,8 +1383,8 @@ tr:nth-child(odd) td {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-right: 1px solid #e0e5fa;
-  border-bottom: 1px solid #e0e5fa;
+  border-right: 1px solid #090909;
+  border-bottom: 1px solid #000000;
   overflow: hidden;
   background: rgba(255, 255, 255, 0.5);
   height: 160px;
