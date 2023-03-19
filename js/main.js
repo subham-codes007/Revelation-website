@@ -125,7 +125,7 @@ jQuery(document).ready(function ($) {
   });
   //pop-up count-down
   // Set the date and time for the countdown
-  var countdownDate = new Date("2023-03-22T00:00:00Z").getTime();
+  var countdownDate = new Date("2023-03-22T17:00:00Z").getTime();
 
   // Update the countdown every second
   var countdownInterval = setInterval(function () {
